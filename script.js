@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             nameElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 200);
+            setTimeout(type, 150);
         }
     }
 

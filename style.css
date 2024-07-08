@@ -128,6 +128,10 @@ span {
     margin-top: 1.5rem;
     line-height: 1;
 }
+.home-content h2 {
+    padding-top: 3rem;
+    font-size: x-large;
+}
 
 .home-img {
     border-radius: 50%;
