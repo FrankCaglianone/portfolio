@@ -184,3 +184,10 @@ span {
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.name {
+    color: var(--main-color);
+}
+
+
+
