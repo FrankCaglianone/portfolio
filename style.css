@@ -206,8 +206,27 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 
+
+
+
+
 .name {
+    display: inline-block;
     color: var(--main-color);
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(22, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
 }
 
 
