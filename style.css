@@ -235,3 +235,61 @@ span {
 
 
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+}
