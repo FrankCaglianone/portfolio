@@ -507,6 +507,10 @@ span {
         width: 50vw;
         height: 50vw;
     }
+
+    .projects .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media screen and (max-width: 480px) {
