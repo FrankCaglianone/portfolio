@@ -555,7 +555,7 @@ span {
     }
 
     .home {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 5rem;
     }
 
