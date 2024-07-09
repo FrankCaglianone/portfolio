@@ -453,7 +453,7 @@ span {
 
 /* ---------- PROJECTS PAGE ---------- */
 .projects {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .projects-box {
     background-size: cover;
