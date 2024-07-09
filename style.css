@@ -95,6 +95,40 @@ body {
 
 
 
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 40px;
+    transition: all .50s ease;
+}
+
+.navlist a:hover{
+    color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color)
+}
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 /* ---------- INDEX PAGE ---------- */
 .header {
     position: fixed;
@@ -131,7 +165,7 @@ body {
 
 
 
-
+/* 
 
 .navbar {
     position: relative;
@@ -163,7 +197,7 @@ body {
 .navbar a:active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
-}
+} */
 
 
 
@@ -551,7 +585,7 @@ span {
     }
 
 
-    .menu-icon {
+    /* .menu-icon {
         display: block;
     }
 
@@ -568,7 +602,38 @@ span {
         margin-left: 0;
         margin-bottom: 1rem;
         font-size: 1.6rem;
+    } */
+
+
+
+
+
+    #menu-icon{
+        display: block; 
     }
+    .navlist{
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: all 0.5s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navlist.active {
+        right: 0;
+    }
+
+
+
 
 
     .home {
