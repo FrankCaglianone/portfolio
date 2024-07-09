@@ -373,7 +373,7 @@ span {
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
-    top: 10%;
+    top: 4.5%;
 }
 .timeline-date {
     font-size: 20px;
