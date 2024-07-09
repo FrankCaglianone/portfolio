@@ -123,6 +123,33 @@ body {
     text-shadow: 0 0 25px var(--main-color);
 }
 
+
+
+
+
+
+
+
+
+
+.navbar {
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -136,6 +163,41 @@ body {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -484,7 +546,7 @@ span {
         padding: 2rem;
     }
 
-    .navbar {
+    /* .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -492,7 +554,38 @@ span {
 
     .navbar a {
         margin: 1rem 0;
+    } */
+
+
+
+    .menu-icon {
+        display: block;
     }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+
+
+
+
+
 
     .home {
         flex-direction: column;
