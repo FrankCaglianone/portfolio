@@ -541,21 +541,13 @@ span {
         font-size: 55%;
     }
 
+    header {
+        background-color: var(--second-bg-color);
+    }
+
     .header {
-        flex-direction: column;
         padding: 2rem;
     }
-
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        margin: 1rem 0;
-    } */
-
 
 
     .menu-icon {
@@ -578,15 +570,6 @@ span {
     }
 
 
-
-
-
-
-
-
-
-
-
     .home {
         flex-direction: column;
         gap: 5rem;
@@ -603,6 +586,33 @@ span {
 
     .projects .wrapper {
         grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .timeline-items {
+        justify-content: flex-start; /* Align items to the start */
+    }
+    .timeline-items::before {
+        left: 0; /* Move the line to the left */
+    }
+    .timeline-item {
+        text-align: left; /* Align text to the left */
+        padding-left: 0; /* Remove padding */
+    }
+    .timeline-item:nth-child(odd), 
+    .timeline-item:nth-child(even) {
+        padding-left: 0; /* Remove padding for both odd and even items */
+        padding-right: 0;
+        text-align: left; /* Align text to the left */
+    }
+    .timeline-dot {
+        left: 2%; /* Move the dot to the left */
+    }
+    .timeline-date {
+        margin: 15px 0 15px 35px;
+    }
+    .timeline-content {
+        margin-left: 10px;
     }
 }
 
