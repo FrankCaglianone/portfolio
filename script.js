@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+// Navigation toggle for media query
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
