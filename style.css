@@ -102,7 +102,8 @@ body {
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    background-color: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -586,6 +587,10 @@ span {
 
     .projects .wrapper {
         grid-template-columns: repeat(1,1fr);
+    }
+    .projects-item {
+        min-height: 10rem;
+        min-width: 10rem;
     }
 
 
