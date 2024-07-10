@@ -707,6 +707,10 @@ span {
 
     .timeline-items {
         justify-content: flex-start; /* Align items to the start */
+        width: 100%;
+    }
+    .timeline h3, h4, p {
+        scale: 0.9;
     }
     .timeline-items::before {
         left: 0; /* Move the line to the left */
