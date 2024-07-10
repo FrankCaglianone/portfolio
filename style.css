@@ -570,13 +570,6 @@ span {
     }
 
 
-
-    .spline {
-        height: 28%;
-        padding-top: -10px;
-        /* transform: scale(0.9); */
-    }
-
     .home {
         flex-direction: column-reverse;
         gap: 5rem;
