@@ -42,52 +42,37 @@ window.onscroll = () => {
 
 
 
-
-
-
-
-
 const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
-const dots = document.querySelectorAll('.dot');
-let currentIndex = 0;
-let slideInterval;
+const slide = document.querySelectorAll('.slide');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+let index = 0;
+const totalSlides = slide.length;
 
-function showNextSlide() {
-    currentIndex = (currentIndex + 1) % slideCount;
-    updateSlidePosition();
+console.log(totalSlides);
+
+function showSlide(n) {
+index = n;
+if (index >= totalSlides-2) {
+    index = 0;
+} else if (index < 0) {
+    index = totalSlides - 1;
+}
+slides.style.transition = "transform 0.5s ease-in-out";
+slides.style.transform = `translateX(${-index * (slide[0].offsetWidth + 20)}px)`;
 }
 
-function showPrevSlide() {
-    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-    updateSlidePosition();
+function nextSlide() {
+showSlide(index + 1);
 }
 
-function currentSlide(index) {
-    currentIndex = index;
-    updateSlidePosition();
+function prevSlide() {
+showSlide(index - 1);
 }
 
-function updateSlidePosition() {
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    updateDots();
-    resetInterval();
-}
+prev.addEventListener('click', prevSlide);
+next.addEventListener('click', nextSlide);
 
-function updateDots() {
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
-}
+setInterval(nextSlide, 5000);
 
-function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(showNextSlide, 5000);
-}
-
-document.querySelector('.left').addEventListener('click', showPrevSlide);
-document.querySelector('.right').addEventListener('click', showNextSlide);
-
-updateSlidePosition();
-resetInterval();
-
+showSlide(index);
