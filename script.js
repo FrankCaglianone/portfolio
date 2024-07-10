@@ -32,3 +32,62 @@ menu.onclick = () => {
 window.onscroll = () => {
     navlist.classList.remove('active');
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+let slideInterval;
+
+function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlidePosition();
+}
+
+function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    updateSlidePosition();
+}
+
+function currentSlide(index) {
+    currentIndex = index;
+    updateSlidePosition();
+}
+
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateDots();
+    resetInterval();
+}
+
+function updateDots() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(showNextSlide, 5000);
+}
+
+document.querySelector('.left').addEventListener('click', showPrevSlide);
+document.querySelector('.right').addEventListener('click', showNextSlide);
+
+updateSlidePosition();
+resetInterval();
+
