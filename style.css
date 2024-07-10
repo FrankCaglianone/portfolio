@@ -186,9 +186,9 @@ section {
 .spline {
     position: absolute;
     /* overflow: hidden; */
-    margin-top: 4%;
+    margin-top: 3%;
     width: 100%;
-    height: 400px;
+    height: 30%;
 }
 
 
@@ -572,8 +572,9 @@ span {
 
 
     .spline {
-        height: 250px;
-        padding-top: 10%;
+        height: 28%;
+        padding-top: -10px;
+        /* transform: scale(0.9); */
     }
 
     .home {
