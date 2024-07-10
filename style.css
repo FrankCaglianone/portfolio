@@ -418,16 +418,27 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
+.timeline-content h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin: 0 0 10px;
+}
 .timeline-content p {
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 22px;
+}
+.timeline-content svg {
+    margin-bottom: 5px;
+    width: 25px;
+    height: 25px;
 }
 ::-webkit-scrollbar {
     width: 15px;
