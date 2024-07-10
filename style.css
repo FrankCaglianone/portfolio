@@ -673,6 +673,7 @@ span {
     .home {
         flex-direction: column-reverse;
         gap: 5rem;
+        padding-top: 25%;
     }
 
     .home-content h1 {
