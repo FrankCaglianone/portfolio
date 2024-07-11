@@ -90,17 +90,18 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
 let active = 3;
+let n = items.length
 
 function loadShow() {
     let stt = 0;
     items[active].style.transform = `none`;
-    items[active].style.zIndex = 1;
+    items[active].style.zIndex = n;
     items[active].style.filter = 'none';
     items[active].style.opacity = 1;
     for(var i = active + 1; i < items.length; i++){
         stt++;
         items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
-        items[i].style.zIndex = -stt;
+        items[i].style.zIndex = n - stt;
         items[i].style.filter = 'blur(2px)';
         items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
     }
@@ -109,22 +110,43 @@ function loadShow() {
     for(var i = active - 1; i >= 0; i--){
         stt++;
         items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
-        items[i].style.zIndex = -stt;
+        items[i].style.zIndex = n - stt;
         items[i].style.filter = 'blur(2px)';
         items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
     }
+
+
+    // Ensure arrow buttons are always on top
+    next.style.zIndex = items.length + 1;
+    prev.style.zIndex = items.length + 1;
 }
 loadShow();
 
-
-
-
 next.onclick = function() {
-    active = active + 1 < items.length ? active + 1 : active;
-    loadShow(); // Call loadShow to update the display
+    if (active + 1 < items.length) {
+        active++;
+        loadShow(); // Call loadShow to update the display
+    }
 }
 
 prev.onclick = function() {
-    active = active - 1 >= 0 ? active - 1 : active;
-    loadShow(); // Call loadShow to update the display
+    if (active - 1 >= 0) {
+        active--;
+        loadShow(); // Call loadShow to update the display
+    }
 }
+
+
+
+
+
+
+// next.onclick = function() {
+//     active = active + 1 < items.length ? active + 1 : active;
+//     loadShow(); // Call loadShow to update the display
+// }
+
+// prev.onclick = function() {
+//     active = active - 1 >= 0 ? active - 1 : active;
+//     loadShow(); // Call loadShow to update the display
+// }
