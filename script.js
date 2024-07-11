@@ -1,6 +1,6 @@
 
 
-// Typing animation in Index.html
+// ---------- Typing animation in Index.html ----------
 document.addEventListener("DOMContentLoaded", function() {
     const nameElement = document.getElementById("name");
     const text = "Francesco Caglianone";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// Navigation toggle for media query
+// ---------- Navigation toggle for media query ----------
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -42,49 +42,9 @@ window.onscroll = () => {
 
 
 
-// const slides = document.querySelector('.slides');
-// const slide = document.querySelectorAll('.slide');
-// const prev = document.getElementById('prev');
-// const next = document.getElementById('next');
-// let index = 0;
-// const totalSlides = slide.length;
-
-// console.log(totalSlides);
-
-// function showSlide(n) {
-// index = n;
-// if (index >= totalSlides-2) {
-//     index = 0;
-// } else if (index < 0) {
-//     index = totalSlides - 1;
-// }
-// slides.style.transition = "transform 0.5s ease-in-out";
-// slides.style.transform = `translateX(${-index * (slide[0].offsetWidth + 20)}px)`;
-// }
-
-// function nextSlide() {
-// showSlide(index + 1);
-// }
-
-// function prevSlide() {
-// showSlide(index - 1);
-// }
-
-// prev.addEventListener('click', prevSlide);
-// next.addEventListener('click', nextSlide);
-
-// setInterval(nextSlide, 5000);
-
-// showSlide(index);
 
 
-
-
-
-
-
-
-
+// ---------- Slider - Carousel ----------
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -126,6 +86,9 @@ next.onclick = function() {
     if (active + 1 < items.length) {
         active++;
         loadShow(); // Call loadShow to update the display
+    } else {
+        active = 0; // Loop back to the first item
+        loadShow(); // Call loadShow to update the display
     }
 }
 
@@ -133,20 +96,31 @@ prev.onclick = function() {
     if (active - 1 >= 0) {
         active--;
         loadShow(); // Call loadShow to update the display
+    } else {
+        active = items.length - 1; // Loop back to the last item
+        loadShow(); // Call loadShow to update the display
     }
 }
 
+// Automatically scroll every 5 seconds
+setInterval(function() {
+    next.onclick();
+}, 4000);
 
 
 
 
 
 // next.onclick = function() {
-//     active = active + 1 < items.length ? active + 1 : active;
-//     loadShow(); // Call loadShow to update the display
+//     if (active + 1 < items.length) {
+//         active++;
+//         loadShow(); // Call loadShow to update the display
+//     }
 // }
 
 // prev.onclick = function() {
-//     active = active - 1 >= 0 ? active - 1 : active;
-//     loadShow(); // Call loadShow to update the display
+//     if (active - 1 >= 0) {
+//         active--;
+//         loadShow(); // Call loadShow to update the display
+//     }
 // }
