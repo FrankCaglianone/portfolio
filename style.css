@@ -418,20 +418,20 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3 {
-    font-size: 23px;
+    font-size: 1.5vw;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
 .timeline-content h4 {
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 400;
     color: white;
     margin: 0 0 10px;
 }
 .timeline-content p {
     color: white;
-    font-size: 17px;
+    font-size: 0.8vw;
     font-weight: 300;
     line-height: 22px;
 }
@@ -763,6 +763,15 @@ span {
     }
     .timeline h3, h4, p {
         scale: 0.9;
+    }
+    .timeline-content h3 {
+        font-size: 23px;
+    }
+    .timeline-content h4 {
+        font-size: 20px;
+    }
+    .timeline-content p {
+        font-size: 17px;
     }
     .timeline-items::before {
         left: 0; /* Move the line to the left */
