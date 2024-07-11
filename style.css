@@ -749,13 +749,24 @@ span {
     .about {
         flex-direction: column;
     }
-    .about .description {
+    .description {
         margin: 0;
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align items vertically center */
+        align-items: center;    /* Align items horizontally center */
     }
+
     .about .description h2 {
-        text-align: center;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+
+    .item{
+        scale: 0.7;
+        margin-left: -10%;
     }
 
     .timeline-items {
