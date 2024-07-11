@@ -45,7 +45,7 @@ window.onscroll = () => {
 
 
 // ---------- Slider - Carousel ----------
-let items = document.querySelectorAll('.slider .item');
+let items = document.querySelectorAll('.slider .card');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
