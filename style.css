@@ -768,6 +768,9 @@ span {
     .timeline-content {
         margin-left: 10px;
     }
+    .projects-item p {
+        scale: 1;
+    }
 }
 
 @media screen and (max-width: 480px) {
