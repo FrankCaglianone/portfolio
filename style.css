@@ -767,9 +767,9 @@ span {
         padding-bottom: 3rem;
     }
 
-    .item{
+    .card{
         scale: 0.7;
-        margin-left: -10%;
+        margin-left: -11%;
     }
 
     .timeline-items {
