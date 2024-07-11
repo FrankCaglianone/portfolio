@@ -465,56 +465,44 @@ span {
 }
 
 /* Slider */
-/* .slider {
-    position: relative;
-    width: 77%;
-    max-width: 1200px;
+.slider {
+    margin-top: 5rem;
+    position: sticky;
+    width: 100%;
+    height: 470px;
     overflow: hidden;
-    margin-top: 3.5rem;
 }
-.slider .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    margin-left: 5px;
-    height: 400px;
-    width: 300px;
-}
-.slider .slide {
-    min-width: 300px;
-    margin: 5px 10px;
-    background-color: #1b263b;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px var(--main-color);
-    height: 350px;
-}
-.slider .slide img {
-    border-radius: 10px;
-    width: 100%;
-    height: 85%;
-    object-fit:fill;
-}
-.slider .slide h2 {
-    font-size: large;
-    color: whitesmoke;
-    text-align: center;
-    margin: 1rem;
-}
-.slider .navigation {
+.item {
     position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+    width: 300px;
+    height: 420px;
+    text-align: justify;
+    background-color: red;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
 }
-.slider .navigation button {
-    background: none;
+
+#next, #prev {
+    position: absolute;
+    top: 40%;
+    color: white;
+    background-color: transparent;
     border: none;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-} */
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+#next {
+    left: unset;
+    right: 50px;
+}
+
+
+
 
 
 
@@ -834,43 +822,3 @@ span {
 
 
 
-
-
-
-
-
-.slider {
-    margin-top: 5rem;
-    position: sticky;
-    width: 100%;
-    height: 470px;
-    overflow: hidden;
-}
-.item {
-    position: absolute;
-    width: 300px;
-    height: 420px;
-    text-align: justify;
-    background-color: red;
-    border-radius: 10px;
-    padding: 20px;
-    transition: 0.5s;
-    left: calc(50% - 110px);
-    top: 0;
-}
-
-#next, #prev {
-    position: absolute;
-    top: 40%;
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-size: xx-large;
-    font-family: monospace;
-    font-weight: bold;
-    left: 50px;
-}
-#next {
-    left: unset;
-    right: 50px;
-}
