@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -58,6 +59,11 @@ section {
     z-index: 5;
 }
 
+.header a, 
+.header span {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
 /* Logo */
 .logo {
     font-size: 3rem;
@@ -80,6 +86,7 @@ section {
 }
 .navlist a{
     font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: var(--text-color);
     margin-left: 40px;
