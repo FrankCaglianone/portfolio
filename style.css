@@ -853,9 +853,11 @@ span {
     }
 
 
-    form .send-btn {
+    .contact-btn {
         width: 100%;
     }
+  
+    
 }
 
 @media screen and (max-width: 480px) {
