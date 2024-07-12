@@ -806,8 +806,11 @@ span {
     }
 
     .card{
-        scale: 0.7;
-        margin-left: -11%;
+        scale: 0.65;
+        margin-left: -10%;
+    }
+    #next {
+        padding-left: 20%;
     }
 
     .timeline-items {
