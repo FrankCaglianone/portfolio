@@ -55,6 +55,21 @@ function downloadCV() {
 
 
 
+// Contact me via email
+function openEmail() {
+    var recipient = 'francescocaglianone@gmail.com';
+    var subject = 'Write the Subject here';
+    var body = 'Hello, this is the body of the email. Feel free to write me ;)';
+
+    var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    window.location.href = mailtoLink;
+}
+
+
+
+
+
+
 
 
 

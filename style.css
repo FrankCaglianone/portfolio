@@ -256,7 +256,7 @@ span {
     box-shadow: 0 0 100px var(--main-color);
 }
 
-.social-icons a {
+.social-icons a, button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -270,11 +270,12 @@ span {
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
-.social-icons a:hover {
+.social-icons a:hover, button:hover {
     color: var(--text-color);
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
+    cursor: pointer;
 }
 
 .btn {
@@ -653,33 +654,17 @@ span {
 .contacts {
     background-color: var(--second-bg-color);
 }
-.contact-form {
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 4.2rem;
-}
-.contact-form form {
-    position: relative;
-    width: 600px;   
-}
-form input, form textarea {
-    width: 100%;
-    padding: 20px;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 5px var(--main-color);
-    background: var(--second-bg-color);
-    color: var(--text-color);
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-form input::placeholder, form textarea::placeholder {
-    color: whitesmoke;
-    font-size: 15px ;
-}
-form .send-btn {
-    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    height: 60px;
     padding: 11px 26px;
     background: var(--main-color);
     color: var(--bg-color);
@@ -690,7 +675,11 @@ form .send-btn {
     transition: all .5s ease;
     width: 30%;
 }
-form .send-btn:hover {
+.contact-btn p {
+    padding-left: 15px;
+    font-size: large;
+}
+.contact-btn:hover {
     background-color: transparent;
     color: var(--main-color);
     box-shadow: 0 0 20px var(--main-color);
