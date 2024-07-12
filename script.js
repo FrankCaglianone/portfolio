@@ -40,6 +40,20 @@ window.onscroll = () => {
 
 
 
+// Download cv action for button
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = './images/CV.pdf'; // Update this with the actual path to your CV file
+    link.download = 'Francesco_Caglianone_CV.pdf'; // This will be the name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+
+
+
 
 
 
