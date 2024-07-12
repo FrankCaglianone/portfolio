@@ -345,7 +345,7 @@ span {
 .about {
     padding: 100px 15px;
     background: var(--second-bg-color);
-    display: flex; 
+    /* display: flex;  */
 }
 .about h2 {
     margin-bottom: 5rem;
@@ -454,7 +454,7 @@ span {
 /* Description */
 .description {
     margin: 5rem;
-    width: 50%;
+    width: 100%;
 }
 .description h2 {
     text-align: start;
