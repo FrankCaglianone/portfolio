@@ -41,14 +41,23 @@ window.onscroll = () => {
 
 
 // Download cv action for button
+// Download CV action for button
 function downloadCV() {
     const link = document.createElement('a');
     link.href = './images/CV.pdf'; // Update this with the actual path to your CV file
     link.download = 'Francesco_Caglianone_CV.pdf'; // This will be the name of the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+
+    // Check if the download attribute is supported
+    if ('download' in link) {
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        // Fallback for browsers that don't support the download attribute
+        window.open(link.href, '_blank');
+    }
 }
+
 
 
 
