@@ -810,7 +810,7 @@ span {
     .slider {
         margin-top: 5rem;
     }
-    
+
     .about .description h2 {
         margin: auto;
         padding-bottom: 3rem;
@@ -875,6 +875,16 @@ span {
         scale: 1;
     }
 
+
+
+
+    .footer .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .social {
+        padding: 0;
+    }
 
     .contact-btn {
         width: 100%;
