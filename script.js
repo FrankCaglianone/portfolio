@@ -54,7 +54,7 @@ function downloadCV() {
         document.body.removeChild(link);
     } else {
         // Fallback for browsers that don't support the download attribute
-        window.open(link.href, '_blank');
+        window.open(link.href, 'target="_blank"');
     }
 }
 
