@@ -57,7 +57,15 @@ function downloadCV() {
         window.open(link.href, '_blank');
     }
 }
+document.getElementById('downloadButton').addEventListener('touchend', function(event) {
+    event.preventDefault(); // Prevent default touch behavior
+    downloadCV();
+});
 
+document.getElementById('downloadButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default click behavior
+    downloadCV();
+});
 
 
 
