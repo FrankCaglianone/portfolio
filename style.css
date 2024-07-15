@@ -814,6 +814,12 @@ span {
     .description p, li{
         scale: 1;
     }
+    .description .heading {
+        text-align: center;
+    }
+    .description ul {
+        margin-left: 26%;
+    }
 
     .card{
         scale: 0.65;
