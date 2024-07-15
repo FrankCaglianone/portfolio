@@ -363,6 +363,7 @@ span {
 /* Timeline */
 .timeline{
     margin: 5rem;
+    margin-top: 20rem;
     flex: 1;
 }
 .timeline-items {
@@ -463,6 +464,7 @@ span {
 .description {
     margin: 5rem;
     width: 100%;
+    display: flex;
 }
 .description h2 {
     text-align: start;
@@ -479,7 +481,7 @@ span {
 
 /* Slider */
 .slider {
-    margin-top: 5rem;
+    margin-top:17rem;
     position: sticky;
     width: 100%;
     height: 470px;
