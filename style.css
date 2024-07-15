@@ -468,8 +468,13 @@ span {
     text-align: start;
     margin-left: 0;
 }
-.description p {
+.description p, li{
     font-size: medium;
+    margin: 20px;
+}
+.description ul {
+    text-align: start;
+    margin-left: 1%;
 }
 
 /* Slider */
@@ -803,6 +808,9 @@ span {
     .about .description h2 {
         margin: auto;
         padding-bottom: 3rem;
+    }
+    .description p, li{
+        scale: 1;
     }
 
     .card{
