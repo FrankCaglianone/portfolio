@@ -807,6 +807,10 @@ span {
         align-items: center;    /* Align items horizontally center */
     }
 
+    .slider {
+        margin-top: 5rem;
+    }
+    
     .about .description h2 {
         margin: auto;
         padding-bottom: 3rem;
