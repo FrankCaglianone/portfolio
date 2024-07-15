@@ -59,10 +59,7 @@ section {
     z-index: 5;
 }
 
-.header a, 
-.header span {
-    font-family: 'Lucida Handwriting', cursive;
-}
+
 
 /* Logo */
 .logo {
