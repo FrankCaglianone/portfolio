@@ -58,7 +58,7 @@ function downloadCV() {
     }
 }
 
-document.getElementById('downloadButton').addEventListener('touched', function(event) {
+document.getElementById('downloadButton').addEventListener('touchend', function(event) {
     event.preventDefault(); // Prevent default touch behavior
     downloadCV();
 });
