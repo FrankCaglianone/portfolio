@@ -362,6 +362,7 @@ span {
     margin: 5rem;
     margin-top: 20rem;
     flex: 1;
+    scale: 0.9;
 }
 .timeline-items {
     max-width: 1200px;

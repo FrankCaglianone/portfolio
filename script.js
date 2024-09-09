@@ -1,36 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const app = Vue.createApp({
-        data() {
-            return {
-                name: "Francesco Caglianone"
-            };
-        },
-        mounted() {
-            this.typeText();  // Start typing effect after mount
-        },
-        methods: {
-            typeText() {
-                let index = 0;
-                const fullText = this.name;
-                this.name = ""; // Clear the name initially
 
-                const type = () => {
-                    if (index < fullText.length) {
-                        this.name += fullText.charAt(index);
-                        index++;
-                        setTimeout(type, 150); // Typing effect
-                    }
-                };
-
-                type();
-            }
-        }
-    });
-
-    app.mount('#app');
-});
 
 
 
