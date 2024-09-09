@@ -690,6 +690,9 @@ span {
     box-shadow: 0 0 20px var(--main-color);
     cursor: pointer;
 }
+#contact-heading {
+    margin: 0;
+}
 
 
 
