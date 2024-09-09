@@ -1,5 +1,42 @@
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const app = Vue.createApp({
+        data() {
+            return {
+                name: "Francesco Caglianone"
+            };
+        },
+        mounted() {
+            this.typeText();  // Start typing effect after mount
+        },
+        methods: {
+            typeText() {
+                let index = 0;
+                const fullText = this.name;
+                this.name = ""; // Clear the name initially
+
+                const type = () => {
+                    if (index < fullText.length) {
+                        this.name += fullText.charAt(index);
+                        index++;
+                        setTimeout(type, 150); // Typing effect
+                    }
+                };
+
+                type();
+            }
+        }
+    });
+
+    app.mount('#app');
+});
+
+
+
+
+
+
 // ---------- Typing animation in Index.html ----------
 document.addEventListener("DOMContentLoaded", function() {
     const nameElement = document.getElementById("name");
@@ -44,7 +81,7 @@ window.onscroll = () => {
 // Download CV action for button
 function downloadCV() {
     const link = document.createElement('a');
-    link.href = './images/CV.pdf'; // Update this with the actual path to your CV file
+    link.href = './data/CV.pdf'; // Update this with the actual path to your CV file
     link.download = 'Francesco_Caglianone_CV.pdf'; // This will be the name of the downloaded file
 
     // Check if the download attribute is supported
