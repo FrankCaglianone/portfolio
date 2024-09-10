@@ -344,7 +344,7 @@ span {
 .heading {
     font-size: 8rem;
     text-align: center;
-    margin: 5rem;
+    margin: 0 0 10rem 0;
 }
 
 /* Section */
@@ -361,7 +361,6 @@ span {
 /* Timeline */
 .timeline{
     margin: 5rem;
-    margin-top: 20rem;
     flex: 1;
     scale: 0.9;
 }
@@ -876,6 +875,10 @@ span {
         height: 50vw;
     }
 
+
+    #timeline-section {
+        margin-top: -10rem;
+    }
 
     .projects {
         padding: 5%;
