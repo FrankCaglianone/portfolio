@@ -827,6 +827,10 @@ span {
         overflow-x: hidden;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         background-color: var(--second-bg-color);
     }
