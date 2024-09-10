@@ -824,6 +824,7 @@ span {
 @media screen and (max-width: 768px) {
     html {
         font-size: 55%;
+        overflow-x: hidden;
     }
 
     header {
