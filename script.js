@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 // ---------- Typing animation in Index.html ----------
 document.addEventListener("DOMContentLoaded", function() {
     const nameElement = document.getElementById("name");
@@ -98,68 +91,68 @@ function openEmail() {
 
 
 
-// ---------- Slider - Carousel ----------
-let items = document.querySelectorAll('.slider .card');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
+// // ---------- Slider - Carousel ----------
+// let items = document.querySelectorAll('.slider .card');
+// let next = document.getElementById('next');
+// let prev = document.getElementById('prev');
 
-let active = 0;
-let n = items.length
+// let active = 0;
+// let n = items.length
 
-function loadShow() {
-    let stt = 0;
-    items[active].style.transform = `none`;
-    items[active].style.zIndex = n;
-    items[active].style.filter = 'none';
-    items[active].style.opacity = 1;
-    for(var i = active + 1; i < items.length; i++){
-        stt++;
-        items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
-        items[i].style.zIndex = n - stt;
-        items[i].style.filter = 'blur(2px)';
-        items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
-    }
+// function loadShow() {
+//     let stt = 0;
+//     items[active].style.transform = `none`;
+//     items[active].style.zIndex = n;
+//     items[active].style.filter = 'none';
+//     items[active].style.opacity = 1;
+//     for(var i = active + 1; i < items.length; i++){
+//         stt++;
+//         items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+//         items[i].style.zIndex = n - stt;
+//         items[i].style.filter = 'blur(2px)';
+//         items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
+//     }
 
-    stt = 0;
-    for(var i = active - 1; i >= 0; i--){
-        stt++;
-        items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
-        items[i].style.zIndex = n - stt;
-        items[i].style.filter = 'blur(2px)';
-        items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
-    }
+//     stt = 0;
+//     for(var i = active - 1; i >= 0; i--){
+//         stt++;
+//         items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+//         items[i].style.zIndex = n - stt;
+//         items[i].style.filter = 'blur(2px)';
+//         items[i].style.opacity = stt > 2 ? 0.2 : 0.7;
+//     }
 
 
-    // Ensure arrow buttons are always on top
-    next.style.zIndex = items.length + 1;
-    prev.style.zIndex = items.length + 1;
-}
-loadShow();
+//     // Ensure arrow buttons are always on top
+//     next.style.zIndex = items.length + 1;
+//     prev.style.zIndex = items.length + 1;
+// }
+// loadShow();
 
-next.onclick = function() {
-    if (active + 1 < items.length) {
-        active++;
-        loadShow(); // Call loadShow to update the display
-    } else {
-        active = 0; // Loop back to the first item
-        loadShow(); // Call loadShow to update the display
-    }
-}
+// next.onclick = function() {
+//     if (active + 1 < items.length) {
+//         active++;
+//         loadShow(); // Call loadShow to update the display
+//     } else {
+//         active = 0; // Loop back to the first item
+//         loadShow(); // Call loadShow to update the display
+//     }
+// }
 
-prev.onclick = function() {
-    if (active - 1 >= 0) {
-        active--;
-        loadShow(); // Call loadShow to update the display
-    } else {
-        active = items.length - 1; // Loop back to the last item
-        loadShow(); // Call loadShow to update the display
-    }
-}
+// prev.onclick = function() {
+//     if (active - 1 >= 0) {
+//         active--;
+//         loadShow(); // Call loadShow to update the display
+//     } else {
+//         active = items.length - 1; // Loop back to the last item
+//         loadShow(); // Call loadShow to update the display
+//     }
+// }
 
-// Automatically scroll every 5 seconds
-setInterval(function() {
-    next.onclick();
-}, 4000);
+// // Automatically scroll every 5 seconds
+// setInterval(function() {
+//     next.onclick();
+// }, 4000);
 
 
 
@@ -178,3 +171,62 @@ setInterval(function() {
 //         loadShow(); // Call loadShow to update the display
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: false,
+    speed: 1500,
+    slidesPerView: 4,
+    spaceBetween: 60,
+    mousewheel: false,
+    parallax: true,
+    centeredSlides: true,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 40,
+      slideShadows: true
+    },
+    autoplay: {
+      delay: 2000,
+      pauseOnMouseEnter: false
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 60
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 60
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 60
+      },
+      2300: {
+        slidesPerView: 5,
+        spaceBetween: 60
+      },
+      2900: {
+        slidesPerView: 6,
+        spaceBetween: 60
+      }
+    }
+  });
