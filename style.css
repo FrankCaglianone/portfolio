@@ -818,28 +818,27 @@ span {
 
 
 
-
-
+/* ------------------------------------------------------- */
 /* ---------- Media Queries for Responsiveness ---------- */
+/* ------------------------------------------------------- */
 @media screen and (max-width: 768px) {
     html {
         font-size: 55%;
         overflow-x: hidden;
     }
-
     body {
         overflow-x: hidden;
     }
 
+
+
+    /* HEADER */
     header {
         background-color: var(--second-bg-color);
     }
-
     .header {
         padding: 2rem;
     }
-
-
     #menu-icon{
         display: block; 
     }
@@ -865,38 +864,24 @@ span {
     }
 
 
+
+    /* HOME SECTION */
     .home {
         flex-direction: column-reverse;
         gap: 5rem;
         padding-top: 25%;
     }
-
     .home-content h1 {
         font-size: 5rem;
     }
-
     .home-img img {
         width: 50vw;
         height: 50vw;
     }
 
 
-    #career{
-        margin-top: -10rem;
-    }
 
-    .projects {
-        padding: 5%;
-    }
-    .projects .wrapper {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .projects-item {
-        min-height: 10rem;
-        min-width: 10rem;
-    }
-
-
+    /* ABOUT SECTION */
     .about {
         flex-direction: column;
     }
@@ -909,11 +894,6 @@ span {
         justify-content: center; /* Align items vertically center */
         align-items: center;    /* Align items horizontally center */
     }
-
-    .slider {
-        margin-top: 5rem;
-    }
-
     .about .description h2 {
         margin: auto;
         padding-bottom: 3rem;
@@ -927,25 +907,18 @@ span {
     .description ul {
         margin-left: 26%;
     }
-
-
     /* Swiper */
     .swiper .parallax-bg {
         width: 320%;
     }
 
-    .card{
-        scale: 0.65;
-        margin-left: -10%;
+
+
+    
+    /* CARRER SECTION */
+    #career{
+        margin-top: -10rem;
     }
-    #next {
-        margin: 0;
-        margin-top: 20px;
-    }
-
-
-
-    /* Timeline */
     .timeline-items {
         justify-content: flex-start; /* Align items to the start */
         width: 100%;
@@ -994,7 +967,33 @@ span {
 
 
 
-    /* Footer */
+    /* PROJECT PORTFOLIO SECTION */
+    .projects {
+        padding: 5%;
+    }
+    .projects .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projects-item {
+        min-height: 10rem;
+        min-width: 10rem;
+    }
+
+
+
+    /* CONTACTS SECTION */
+    #contact-heading {
+        margin: 0;
+    }
+    .contact-btn {
+        width: 100%;
+        padding: 0;
+        text-align: start;
+    }  
+
+
+
+    /* FOOTER */
     .footer .list {
         display: flex;
         flex-direction: column;
@@ -1002,18 +1001,14 @@ span {
     .footer .social {
         padding: 0;
     }
-
-
-    #contact-heading {
-        margin: 0;
-    }
-
-    .contact-btn {
-        width: 100%;
-        padding: 0;
-        text-align: start;
-    }  
 }
+
+
+
+
+
+
+
 
 
 
