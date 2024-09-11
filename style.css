@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Exo 2", sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -67,6 +71,7 @@ section {
 /* Logo */
 .logo {
     font-size: 3rem;
+    font-family: "EB Garamond", serif;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -76,6 +81,7 @@ section {
     transform: scale(1.1);
 }
 .logo span {
+    font-family: "EB Garamond", serif;
     text-shadow: 0 0 25px var(--main-color);
     color: var(--main-color);
 }
@@ -87,7 +93,7 @@ section {
 }
 .navlist a{
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "EB Garamond", serif;
     font-weight: 500;
     color: var(--text-color);
     margin-left: 40px;
@@ -294,14 +300,14 @@ section {
     margin-left: 0;
 }
 .description li{
-    font-size: medium;
+    font-size:large;
     margin: 20px 20px 20px 0;
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center;     /* Vertically center */
 }
 .description p{
-    font-size: medium;
+    font-size: large;
     margin: 20px 20px 20px 0;
     text-align: center;
     padding: 2rem 30rem 2rem 30rem;
@@ -318,7 +324,6 @@ section {
     max-height: 60vh; /* !!!!!! Limit the height of the slides */
     /* background-color: #05fd99; */
 }
-
 .sectionWrapper {
   width: 100%;
   height: auto;
@@ -327,14 +332,12 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
 .swiper {
   width: 100%;
   height: auto;
   /* padding: 50px 20px; */
   overflow: visible;
 }
-
 .swiper .parallax-bg {
   position: absolute;
   right: -5%;
@@ -342,11 +345,9 @@ section {
   width: 200%;
   /* height: 200%; */
 }
-
 .swiper .swiper-wrapper {
   align-items: center;
 }
-
 .swiper .swiper-slide {
   position: relative;
   height: auto;
@@ -362,7 +363,6 @@ section {
   user-select: none;
   text-wrap: pretty;
 }
-
 .swiper .swiper-slide::before {
   position: absolute;
   bottom: 0;
@@ -375,7 +375,6 @@ section {
   content: "";
   transition: all 0.3s ease;
 }
-
 .swiper .swiper-slide::after {
   position: absolute;
   top: 0;
@@ -388,7 +387,6 @@ section {
   content: "";
   transition: all 0.3s ease;
 }
-
 .swiper .swiper-slide:hover {
     background: linear-gradient(
         135deg,
@@ -412,7 +410,6 @@ section {
   height: 170px;
   transition: all 0.3s ease;
 }
-
 .swiper .swiper-slide .cardPopout {
   width: 100%;
   height: 100%;
@@ -425,7 +422,6 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
 .swiper .swiper-slide img {
   width: 100%;
   height: auto;
@@ -437,13 +433,12 @@ section {
   font-size: 200%;
   line-height: 110%;
   margin: 0 0 7px 0;
-  color: white;
+  color: whitesmoke;
   font-family: "Nabla", system-ui;
   font-variation-settings: "EDPT" 100, "EHLT" 24;
   background-color: #111;
   border-radius: 100%;
 }
-
 .swiper .swiper-slide h4 {
   font-size: 110%;
   line-height: 120%;
@@ -766,7 +761,7 @@ section {
     color: var(--main-color);
 }
 .footer .social a {
-    font-size: 25px;
+    font-size: 15px;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     width: 42px;
