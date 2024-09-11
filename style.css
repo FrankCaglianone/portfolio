@@ -290,15 +290,24 @@ section {
     display: flex;
 }
 .description h2 {
-    text-align: start;
+    /* text-align: start; */
     margin-left: 0;
 }
-.description p, li{
+.description li{
     font-size: medium;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+}
+.description p{
+    font-size: medium;
+    margin: 20px 20px 20px 0;
+    text-align: center;
+    padding: 2rem 30rem 2rem 30rem;
 }
 .description ul {
-    text-align: start;
+    /* text-align: start; */
     margin-left: 1%;
 }
 
@@ -904,19 +913,28 @@ section {
     }
     .description p, li{
         scale: 1;
+        margin: 20px;
+        padding: 0;
     }
     .description .heading {
         text-align: center;
     }
     .description ul {
         margin-left: 26%;
+        text-align: start;
+        margin-left: 1%;
     }
     /* Swiper */
     .swiper .parallax-bg {
         width: 320%;
     }
 
-
+   
+    /* .description p, li{
+        font-size: medium;
+        margin: 20px;
+    } */
+  
 
     
     /* CARRER SECTION */
