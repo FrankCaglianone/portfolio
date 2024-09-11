@@ -980,7 +980,7 @@ span {
         text-align: left; /* Align text to the left */
     }
     .timeline-dot {
-        left: -2.5%; /* Move the dot to the left */
+        left: -3%; /* Move the dot to the left */
     }
     .timeline-date {
         margin: 15px 0 15px 35px;
