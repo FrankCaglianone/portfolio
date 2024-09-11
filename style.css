@@ -962,12 +962,16 @@ span {
     .timeline-content p {
         font-size: 17px;
     }
+    .timeline-content svg {
+        padding-left: -5px;
+    }
     .timeline-items::before {
         left: 0; /* Move the line to the left */
     }
     .timeline-item {
         text-align: left; /* Align text to the left */
         padding-left: 0; /* Remove padding */
+        width: 200%;
     }
     .timeline-item:nth-child(odd), 
     .timeline-item:nth-child(even) {
