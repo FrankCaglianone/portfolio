@@ -178,7 +178,7 @@ section {
 }
 .home-img img {
     position: relative;
-    top: 20rem;
+    top: 13rem;
     width: 25vw;
     height: 30vw;
     border-radius: 50%;
@@ -877,13 +877,14 @@ section {
     .home {
         flex-direction: column-reverse;
         gap: 5rem;
-        padding-top: 25%;
+        padding-top: 50%;
     }
     .home-content h1 {
         font-size: 5rem;
+        margin-top: 0;
     }
     .home-img img {
-        width: 50vw;
+        width: 45vw;
         height: 50vw;
     }
 
