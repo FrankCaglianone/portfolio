@@ -171,6 +171,10 @@ section {
     padding-top: 3rem;
     font-size: x-large;
 }
+.home-content h3 {
+    padding-top: 2rem;
+    font-size: large;
+}
 
 .home-img {
     border-radius: 50%;
