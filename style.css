@@ -206,7 +206,7 @@ section {
 }
 .carousel i {
     height: 100%;
-    margin-right: 20px; /* Spacing between logos */
+    margin-right: 25px; /* Spacing between logos */
     transition: transform 0.5s ease;
 }
 @keyframes slide {
