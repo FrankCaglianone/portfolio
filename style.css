@@ -1152,6 +1152,9 @@ section {
     .swiper .parallax-bg {
         width: 320%;
     }
+    .swiper-slide {
+        scale: 0.9;
+    }
 
 
 
