@@ -326,6 +326,12 @@ section {
 .description h2 {
     margin-left: 0;
 }
+.description p{
+    font-size: large;
+    margin: 20px 20px 20px 0;
+    text-align: center;
+    padding: 2rem 30rem 2rem 30rem;
+}
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -334,14 +340,14 @@ section {
     padding: 20px;
 }
 .card {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     perspective: 1000px;
 }
 .card h2 {
     text-align: center;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     color: var(--main-color);
     margin: 0;
 }
@@ -368,6 +374,26 @@ section {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2; /* Place the overlay on top of the background image */
+}
+.background-blur-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Behind the text */
+}
+.background-blur-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.80); 
     z-index: 2; /* Place the overlay on top of the background image */
 }
 .text-content {
@@ -399,18 +425,18 @@ section {
     background-color: var(--bg-color);
     transform: rotateY(180deg);
 }
+#card-back-text{
+    font-size: large; 
+    text-align: start;
+    margin: 0; 
+    padding: 0;
+}
 /* Flip effect on hover */
 .card:hover .card-front {
     transform: rotateY(180deg);
 }
 .card:hover .card-back {
     transform: rotateY(360deg);
-}
-.description p{
-    font-size: large;
-    margin: 20px 20px 20px 0;
-    text-align: center;
-    padding: 2rem 30rem 2rem 30rem;
 }
 
 /* Swiper */
