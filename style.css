@@ -928,6 +928,25 @@ section {
         width: 45vw;
         height: 50vw;
     }
+    .carousel-container {
+        box-sizing: border-box;
+    }
+    .carousel {
+        display: flex;
+        overflow: visible;
+        animation: slide 30s linear infinite;
+        box-sizing: border-box;
+    }
+    .carousel i {
+        height: auto;
+        width: 40px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-100% - 250px)); } /* Scroll through all icons */
+    }
 
 
 
