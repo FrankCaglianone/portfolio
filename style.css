@@ -1157,6 +1157,9 @@ section {
     .swiper-slide {
         scale: 0.8;
     }
+    #swiper-section h2 {
+        margin: 10px;
+    }
 
 
 
