@@ -1076,7 +1076,7 @@ section {
         align-items: center;    /* Align items horizontally center */
     }
     .card {
-        scale: 0.9;
+        scale: 0.7;
     }
     .about .description h2 {
         padding-bottom: 4rem;
