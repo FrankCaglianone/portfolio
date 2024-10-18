@@ -1031,6 +1031,9 @@ section {
         gap: 5rem;
         padding-top: 50%;
     }
+    .home-content {
+        margin-top: 12rem;
+    }
     .home-content h1 {
         font-size: 5rem;
         margin-top: 0;
