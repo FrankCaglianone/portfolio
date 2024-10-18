@@ -88,6 +88,20 @@ function openEmail() {
 
 
 
+// About Me Card Animation
+// Select all the cards
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('is-flipped');
+  });
+});
+
+
+
+
+
 
 // Swiper function
 const swiper = new Swiper(".swiper", {
