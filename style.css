@@ -1082,9 +1082,8 @@ section {
         padding-bottom: 4rem;
     }
     .description p{
-        
         margin: 20px;
-        padding: 0;
+        padding: 0 6rem;
     }
     .description .heading {
         text-align: center;
@@ -1147,7 +1146,7 @@ section {
 
     /* HOBBIES SECTION */
     .sectionWrapper {
-        margin-top: -35%;
+        margin-top: -40%;
     }
     .swiper .parallax-bg {
         width: 320%;
