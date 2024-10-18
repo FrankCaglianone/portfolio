@@ -922,6 +922,7 @@ section {
     .home-content h1 {
         font-size: 5rem;
         margin-top: 0;
+        text-align: start;
     }
     .home-img img {
         width: 45vw;
@@ -1071,7 +1072,7 @@ section {
 
 
 @media screen and (max-width: 480px) {
-    html {
+    /* html {
         font-size: 50%;
     }
 
@@ -1090,6 +1091,6 @@ section {
     .btn {
         padding: 0.8rem 2rem;
         font-size: 1.4rem;
-    }
+    } */
 }
 
