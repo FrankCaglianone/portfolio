@@ -341,6 +341,7 @@ section {
 .card h2 {
     text-align: center;
     font-weight: bold;
+    font-size: x-large;
     color: var(--main-color);
     margin: 0;
 }
@@ -348,6 +349,33 @@ section {
     text-align: center;
     font-size: small;
     font-weight: lighter;
+}
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Behind the text */
+}
+.background-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2; /* Place the overlay on top of the background image */
+}
+.text-content {
+    position: relative;
+    z-index: 2; /* In front of the blurred background */
+    color: white; /* Adjust text color for visibility */
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
 }
 .card-front, .card-back {
     width: 100%;
