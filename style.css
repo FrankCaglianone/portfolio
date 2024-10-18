@@ -71,7 +71,7 @@ section {
 /* Logo */
 .logo {
     font-size: 3rem;
-    font-family: "EB Garamond", serif;
+    /* font-family: "EB Garamond", serif; */
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -81,7 +81,7 @@ section {
     transform: scale(1.1);
 }
 .logo span {
-    font-family: "EB Garamond", serif;
+    /* font-family: "EB Garamond", serif; */
     text-shadow: 0 0 25px var(--main-color);
     color: var(--main-color);
 }
@@ -93,7 +93,7 @@ section {
 }
 .navlist a{
     font-size: 2rem;
-    font-family: "EB Garamond", serif;
+    /* font-family: "EB Garamond", serif; */
     font-weight: 500;
     color: var(--text-color);
     margin-left: 40px;
