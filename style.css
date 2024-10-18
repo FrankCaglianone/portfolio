@@ -671,12 +671,14 @@ section {
     box-shadow: 0 0 50px var(--main-color);
 }
 .projects-item h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 .projects-item p {
     font-size: 1.3rem;
     margin-top: 3.5%;
-    text-align: center;
+    text-align: justify;
+    /* text-align: center; */
 }
 .project-item-title {
     display: flex;
@@ -684,8 +686,15 @@ section {
     align-items: center;
     margin-top: 5%; 
 }
-.project-item-title h2 {
-    margin: 0;
+#project-tag {
+    border: 2px solid #333333;
+    background-color: #333333;
+    padding: 5px 10px 10px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#project-tag p {
+    color: whitesmoke;
 }
 .project-item-title a {
     display: inline-flex;
