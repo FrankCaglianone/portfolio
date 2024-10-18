@@ -569,16 +569,18 @@ section {
 
 
 /* ------------------------------------------------------- */
-/* -------------- PROJECT PORTFOLIO SECTION -------------- */
+/* -------------- HOBBIES SECTION -------------- */
 /* ------------------------------------------------------- */
 /* Swiper */
 #swiper-section {
     height: auto;
     max-height: 60vh; /* !!!!!! Limit the height of the slides */
     background-color: var(--second-bg-color);
+    padding: 10rem 0 0 0;
 }
 .sectionWrapper {
   width: 100%;
+  margin-top: -5%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1087,10 +1089,6 @@ section {
     .description .heading {
         text-align: center;
     }
-    /* Swiper */
-    .swiper .parallax-bg {
-        width: 320%;
-    }
 
    
 
@@ -1143,6 +1141,16 @@ section {
     }
     .projects-item p {
         scale: 1;
+    }
+
+
+
+    /* HOBBIES SECTION */
+    .sectionWrapper {
+        margin-top: -35%;
+    }
+    .swiper .parallax-bg {
+        width: 320%;
     }
 
 
