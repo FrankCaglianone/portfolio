@@ -1193,6 +1193,7 @@ section {
     .footer .list {
         display: flex;
         flex-direction: column;
+        padding: 25px;
     }
     .footer .social {
         padding: 0;
