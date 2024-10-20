@@ -198,7 +198,7 @@ section {
 
 .carousel-container {
     overflow: hidden;
-    width: 100%;
+    width: 65%;
     max-width: 55vw;
     margin-top: 20px;
 }
@@ -1044,6 +1044,7 @@ section {
     }
     .carousel-container {
         box-sizing: border-box;
+        width: 90%;
         max-width: 80vw;
     }
     .carousel {
