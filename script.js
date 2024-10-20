@@ -152,3 +152,22 @@ const swiper = new Swiper(".swiper", {
     }
   }
 });
+
+
+
+
+
+
+function duplicateIcons(times) {
+  const carousel = document.getElementById('carousel');
+  const icons = carousel.innerHTML; // Get the original set of icons
+  let duplicates = '';
+
+  // Repeat the icons "times" number of times
+  for (let i = 0; i < times; i++) {
+      duplicates += icons;
+  }
+
+  carousel.innerHTML = duplicates; // Insert the duplicated icons into the carousel
+}
+duplicateIcons(100);
