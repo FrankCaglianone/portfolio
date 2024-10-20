@@ -205,7 +205,7 @@ section {
 .carousel {
     display: flex;
     white-space: nowrap;
-    animation: scroll 25s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 .carousel i {
     margin-right: 40px;
