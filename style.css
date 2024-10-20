@@ -1178,6 +1178,9 @@ section {
 
 
     /* CONTACTS SECTION */
+    #contacts {
+        margin-bottom: -20vw;
+    }
     #contact-heading {
         margin: 0;
     }
