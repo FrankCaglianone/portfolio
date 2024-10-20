@@ -196,28 +196,27 @@ section {
     box-shadow: 0 0 100px var(--main-color);
 }
 
-.carousel {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 25px;
-    width: 100%;
-    animation: slide 30s linear infinite;
-}
-.carousel i {
-    height: 100%;
-    margin-left: 35px;
-    transition: transform 0.5s ease;
-}
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
 .carousel-container {
     overflow: hidden;
-    position: relative;
     width: 100%;
-    max-width: 80vw;
+    max-width: 55vw;
+    margin-top: 20px;
+}
+.carousel {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+}
+.carousel i {
+    margin-right: 40px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .social-icons a, button {
@@ -1045,6 +1044,7 @@ section {
     }
     .carousel-container {
         box-sizing: border-box;
+        max-width: 80vw;
     }
     .carousel {
         display: flex;
