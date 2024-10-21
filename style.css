@@ -205,7 +205,7 @@ section {
 .carousel {
     display: flex;
     white-space: nowrap;
-    animation: scroll 40s linear infinite;
+    animation: scroll 3000s linear infinite;
 }
 .carousel i {
     margin-right: 40px;
@@ -215,7 +215,7 @@ section {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-10000%);
     }
 }
 
@@ -1050,7 +1050,7 @@ section {
     .carousel {
         display: flex;
         overflow: visible;
-        animation: slide 30s linear infinite;
+        animation: slide 2000s linear infinite;
         box-sizing: border-box;
     }
     .carousel i {
@@ -1061,7 +1061,7 @@ section {
     }
     @keyframes slide {
         0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-100% - 250px)); } /* Scroll through all icons */
+        100% { transform: translateX(calc(-10000% - 250px)); } /* Scroll through all icons */
     }
 
 
