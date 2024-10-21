@@ -1092,6 +1092,12 @@ section {
     .description .heading {
         text-align: center;
     }
+    #card-back-text {
+        font-size: 20px;
+    }
+    .text-content p {
+        font-size: medium;
+    }
 
    
 
