@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Francesco Caglianone</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
   <style>
     :root {
@@ -54,6 +56,7 @@
     @keyframes typing{from{width:0;}to{width:30ch;}}@keyframes blink{from,to{border-color:transparent;}50%{border-color:var(--light);}}
     .btn{display:inline-block;padding:.75rem 1.75rem;font-size:1rem;font-weight:500;color:var(--background);background:var(--primary);border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:transform .3s ease,background .3s ease;}
     .btn:hover{transform:scale(1.05);background:#914a6c;}
+    .location{padding: 0px 0px 25px 0px;}
 
     /* Sections */
     section { padding:4rem 2rem; }
@@ -98,6 +101,37 @@
     .project-link {position: absolute;bottom: 1rem;right: 1rem;width: 54px;height: 54px;background: var(--accent);border-radius: 50%;display: flex;align-items: center;justify-content: center;text-decoration: none;}
     .project-link svg {width: 30px;height: 30px;fill: whitesmoke;}
 
+
+
+    .carousel-container {
+    overflow: hidden;
+    /* width: 50%; */
+    max-width: 55vw;
+    margin-top: 10px;
+    padding: 0px 0px 35px 0px;
+}
+.carousel {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 3000s linear infinite;
+}
+.carousel i {
+  margin-right: 20px;
+  scale: 70%;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10000%);
+    }
+}
+
+
+
+
+
     /* Footer */
     footer{text-align:center;padding:2rem 1rem;font-size:.9rem;color:#888;animation:fadeIn 1s .3s ease forwards;opacity:0;}@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
   </style>
@@ -139,7 +173,27 @@
     <div class="hero-content">
       <h1>Hey, I'm Francesco Caglianone</h1>
       <div class="typewriter">Software/AI Developer</div>
-      <h4>📍Dubai,UAE</h3>
+      <h3 class="location">📍Dubai,UAE</h3>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <i class="devicon-r-plain colored fa-3x"></i>
+            <i class="devicon-python-plain colored fa-3x"></i>
+            <i class="devicon-flutter-plain colored fa-3x"></i>
+            <i class="devicon-cplusplus-plain colored fa-3x"></i>
+            <i class="devicon-java-plain colored fa-3x"></i>
+            <i class="devicon-html5-plain colored fa-3x"></i>
+            <i class="devicon-css3-plain colored fa-3x"></i>
+            <i class="devicon-javascript-plain colored fa-3x"></i>
+            <i class="devicon-vuejs-plain colored fa-3x"></i>
+            <i class="devicon-nodejs-plain colored fa-3x"></i>
+            <i class="devicon-react-original colored fa-3x"></i>
+            <i class="devicon-github-original fa-3x"></i>
+            <i class="devicon-android-plain colored fa-3x"></i>
+            <i class="devicon-mongodb-plain colored fa-3x"></i>
+            <i class="devicon-mysql-plain colored fa-3x"></i>
+            <i class="devicon-googlecloud-plain colored fa-3x"></i>
+        </div>
+      </div>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
@@ -312,6 +366,24 @@
         });
       });
     });
+
+
+
+
+
+function duplicateIcons(times) {
+  const carousel = document.getElementById('carousel');
+  const icons = carousel.innerHTML; // Get the original set of icons
+  let duplicates = '';
+
+  // Repeat the icons "times" number of times
+  for (let i = 0; i < times; i++) {
+      duplicates += icons;
+  }
+
+  carousel.innerHTML = duplicates; // Insert the duplicated icons into the carousel
+}
+duplicateIcons(100);
   </script>
 </body>
 </html>
