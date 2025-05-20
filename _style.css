@@ -566,6 +566,50 @@ section {
 
 
 
+/* ------------------------------------------------------- */
+/* ---------------- LEILA SECTION ----------------------- */
+/* ------------------------------------------------------- */
+.leila{
+    background-color: var(--second-bg-color);
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+.description {
+    padding: 20px;
+    font-size: 18px;
+}
+.center-image {
+    display: block;
+    margin: 0px auto;
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 10px;
+    /* padding: 10px; */
+    scale: 0.7;
+}
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+}
+.grid img:hover{
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------- */
 /* -------------- HOBBIES SECTION -------------- */
@@ -1226,3 +1270,6 @@ section {
 }
 
   
+
+
+
