@@ -74,14 +74,20 @@
     .timeline{position:relative;max-width:800px;margin:auto;} 
     .timeline::after{content:'';position:absolute;width:4px;background:var(--primary);top:0;bottom:0;left:50%;transform:translateX(-50%);}
     .entry{padding:1rem 2rem;position:relative;width:50%;opacity:0;animation:entryFade .8s ease forwards;} 
-    .entry.left{left:0;} 
-    .entry.right{left:50%;} 
+    .entry.left{left:0;text-align: right;} 
+    .entry.right{left:50%;text-align: left;} 
     .entry:nth-child(1){animation-delay:.3s;} 
     .entry:nth-child(2){animation-delay:.5s;} 
     .entry:nth-child(3){animation-delay:.7s;} 
     @keyframes entryFade{from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);}} 
     .entry::before{content:'';position:absolute;width:20px;height:20px;background:var(--primary);border-radius:50%;top:1rem;right:-10px;} 
     .entry.right::before{left:-10px;} 
+
+    /* Carrer */
+    .date {font-size: medium;color: whitesmoke;}
+    .role {font-size: large;color: whitesmoke;}
+    .company {font-size: medium;color: whitesmoke;}
+    .place {font-size: small;color: whitesmoke;}
 
     /* Filter Buttons */
     .filter-buttons {display: flex;justify-content: center;gap: 1rem;flex-wrap: wrap;margin-bottom: 2rem;} 
@@ -225,9 +231,26 @@
   <section id="career">
     <h2>My Career Journey</h2>
     <div class="timeline reveal">
-      <div class="entry left"><div class="date">2024 – Present</div><div class="role">Software Engineer</div><div class="company">TechCorp Innovations</div><div class="desc">Building scalable web apps with React & Node.js.</div></div>
-      <div class="entry right"><div class="date">2022 – 2024</div><div class="role">Frontend Developer</div><div class="company">Creative Pixel Studio</div><div class="desc">Crafted responsive UI components in Vue.js.</div></div>
-      <div class="entry left"><div class="date">2020 – 2022</div><div class="role">Junior Dev Intern</div><div class="company">GlobalTech Solutions</div><div class="desc">Automated tools in Python to boost productivity.</div></div>
+      <div class="entry right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--primary)" class="bi bi-briefcase-fill" viewBox="0 0 16 16"><path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/><path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/></svg>
+        <div class="date">2024 – Present</div><div class="role">Corporater Analyst</div><div class="company">Seidor</div><div class="place">Dubai, UAE</div>
+      </div>
+      <div class="entry left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--primary)" class="bi bi-mortarboard-fill" viewBox="0 0 16 16"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/></svg>
+        <div class="date">2023 – 2024</div><div class="role">B.S. in Global Business Informatics</div><div class="company">IT-Universitetet</div><div class="place">Copenhagen, Denmark</div>
+      </div>
+      <div class="entry left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--primary)" class="bi bi-mortarboard-fill" viewBox="0 0 16 16"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/></svg>
+        <div class="date">2021 – 2022</div><div class="role">B.S. in Informatics</div><div class="company">USI (Universitá della Svizzera Italiana)</div><div class="place">Lugano, Switzerland</div>
+      </div>
+      <div class="entry right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--primary)" class="bi bi-briefcase-fill" viewBox="0 0 16 16"><path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/><path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/></svg>
+        <div class="date">2018</div><div class="role">Full Stack Web Developer, Internship</div><div class="company">BruBru</div><div class="place">Dubai, UAE</div>
+      </div>
+      <div class="entry right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--primary)" class="bi bi-briefcase-fill" viewBox="0 0 16 16"><path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/><path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/></svg>
+        <div class="date">2017</div><div class="role">Software Engineer, Internship</div><div class="company">Clariba</div><div class="place">Dubai, UAE</div>
+      </div>
     </div>
   </section>
 
@@ -317,7 +340,7 @@
     const io=new IntersectionObserver((entries)=>{entries.forEach(e=>e.target.classList.toggle('visible',e.isIntersecting));},{threshold:0.2});
     reveals.forEach(r=>io.observe(r));
 
-    // Context-aware prompts
+    // Mascot Context-aware prompts
     const bubble=document.getElementById('mascot-bubble');
     const prompts={about:'Check out my background!',career:'Explore my career path.',projects:'See my featured projects!'};
     const so=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){bubble.textContent=prompts[e.target.id];bubble.style.opacity=1;setTimeout(()=>bubble.style.opacity=0,3000);}});},{threshold:0.5});
