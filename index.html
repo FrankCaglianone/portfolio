@@ -110,129 +110,26 @@
     /* Social Lighting Icons */
     .socials {display: flex;flex-wrap: wrap;gap: 1rem;align-items: center;justify-content:flex-start;}
     @media (max-width: 768px) { .socials { gap: 0.75rem; } .light-button {transform: scale(0.95);} }
-
-  
-  @media (max-width: 480px) {
-    .socials {
-      gap: 0.5rem;        /* a bit tighter */
-    }
-    .light-button {
-      /* optionally shrink buttons slightly */
-      transform: scale(0.75);
-    }
-  }
-
-
-
-
-
-
-.light-button button.bt {
-  position: relative;
-  height: 200px;
-  display: flex;
-  align-items: flex-end;
-  outline: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.light-button button.bt .button-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  width: 60px;
-  background-color: #0a0a0a;
-  border-radius: 5px;
-  color: #0f0f0f;
-  font-weight: 700;
-  transition: 300ms;
-  outline: #0f0f0f 2px solid;
-  outline-offset: 20;
-  margin-left: 10px;
-}
-
-.light-button button.bt .button-holder svg {
-  height: 50px;
-  fill: #0f0f0f;
-  transition: 300ms;
-}
-
-
-.light-button button.bt .light-holder {
-  position: absolute;
-  height: 150px;
-  width: 100px;
-  margin-left: -9px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.light-button button.bt .light-holder .dot {
-  position: absolute;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #0a0a0a;
-  border-radius: 10px;
-  z-index: 2;
-}
-
-.light-button button.bt .light-holder .light {
-  position: absolute;
-  top: 0;
-  width: 200px;
-  height: 200px;
-  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
-  background: transparent;
-}
-
-.light-button button.bt:hover .button-holder svg {
-  fill: var(--hover-color);
-}
-
-.light-button button.bt:hover .button-holder {
-  color: var(--hover-color);
-  outline: var(--hover-color) 2px solid;
-  outline-offset: 2px;
-}
-
-.light-button button.bt:hover .light-holder .light {
-  background: linear-gradient(
-    180deg,
-    var(--hover-color) 0%,
-    rgba(255, 255, 255, 0) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.light-button { --hover-color: rgba(88, 101, 242, 1);}
-.light-button.linkedin  { --hover-color: #0077B5; } /* LinkedIn blue */
-.light-button.github    { --hover-color: #6e5494; } /* GitHub purple */
-.light-button.instagram { --hover-color: #E4405F; } /* Instagram magenta */
-.light-button.tiktok    { --hover-color: #69C9D0; } /* TikTok teal */
-
-
-
-
-
-
+    @media (max-width: 480px) { .socials { gap: 0.5rem; } .light-button { transform: scale(0.75);} }
+    .light-button button.bt { position: relative;height: 200px;display: flex;align-items: flex-end;outline: none;background: none;border: none;cursor: pointer; }
+    .light-button button.bt .button-holder { display: flex;flex-direction: column;align-items: center;justify-content: center;height: 60px;width: 60px;background-color: #0a0a0a;border-radius: 5px;color: #0f0f0f;font-weight: 700;transition: 300ms;outline: #0f0f0f 2px solid;outline-offset: 20;margin-left: 10px; }
+    .light-button button.bt .button-holder svg {height: 50px;fill: #0f0f0f;transition: 300ms; }
+    .light-button button.bt .light-holder {position: absolute;height: 150px;width: 100px;margin-left: -9px;display: flex;flex-direction: column;align-items: center;}
+    .light-button button.bt .light-holder .dot { position: absolute;top: 0;width: 10px;height: 10px;background-color: #0a0a0a;border-radius: 10px;z-index: 2; }
+    .light-button button.bt .light-holder .light { position: absolute;top: 0;width: 200px;height: 200px;clip-path: polygon(50% 0%, 25% 100%, 75% 100%);background: transparent; }
+    .light-button button.bt:hover .button-holder svg { fill: var(--hover-color); }
+    .light-button button.bt:hover .button-holder {color: var(--hover-color);outline: var(--hover-color) 2px solid;outline-offset: 2px;}
+    .light-button button.bt:hover .light-holder .light { background: linear-gradient(180deg, var(--hover-color) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);}
+    .light-button { --hover-color: rgba(88, 101, 242, 1);}
+    .light-button.linkedin  { --hover-color: #0077B5; } /* LinkedIn blue */
+    .light-button.github    { --hover-color: #6e5494; } /* GitHub purple */
+    .light-button.instagram { --hover-color: #E4405F; } /* Instagram magenta */
+    .light-button.tiktok    { --hover-color: #69C9D0; } /* TikTok teal */
 
     /* Footer */
     footer{text-align:center;padding:2rem 1rem;font-size:.9rem;color:#888;animation:fadeIn 1s .3s ease forwards;opacity:0;}@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
   </style>
 </head>
-
-
-
-
-
-
-
 
 
 
@@ -441,13 +338,6 @@
 
 
 
-
-
-
-
-
-
-
   <script>
     // Mobile nav toggle
     document.getElementById('toggle').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
@@ -484,23 +374,18 @@
       });
     });
 
-
-
-
-
-function duplicateIcons(times) {
-  const carousel = document.getElementById('carousel');
-  const icons = carousel.innerHTML; // Get the original set of icons
-  let duplicates = '';
-
-  // Repeat the icons "times" number of times
-  for (let i = 0; i < times; i++) {
-      duplicates += icons;
-  }
-
-  carousel.innerHTML = duplicates; // Insert the duplicated icons into the carousel
-}
-duplicateIcons(100);
+    // Skills Icons Duplication
+    function duplicateIcons(times) {
+      const carousel = document.getElementById('carousel');
+      const icons = carousel.innerHTML; // Get the original set of icons
+      let duplicates = '';
+      // Repeat the icons "times" number of times
+      for (let i = 0; i < times; i++) {
+          duplicates += icons;
+      }
+      carousel.innerHTML = duplicates; // Insert the duplicated icons into the carousel
+    }
+    duplicateIcons(100);
   </script>
 </body>
 </html>
