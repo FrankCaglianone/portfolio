@@ -342,9 +342,9 @@
 
     // Mascot Context-aware prompts
     const bubble=document.getElementById('mascot-bubble');
-    const prompts={about:'Check out my background!',career:'Explore my career path.',projects:'See my featured projects!'};
+    const prompts={home:'Welcome!', about:'Check out my background!',career:'Explore my career path.',projects:'See my featured projects!'};
     const so=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){bubble.textContent=prompts[e.target.id];bubble.style.opacity=1;setTimeout(()=>bubble.style.opacity=0,3000);}});},{threshold:0.5});
-    ['about','career','projects'].forEach(id=>{const el=document.getElementById(id);if(el)so.observe(el);});
+    ['home','about','career','projects'].forEach(id=>{const el=document.getElementById(id);if(el)so.observe(el);});
 
     // Filter functionality
     const filterBtns = document.querySelectorAll('.filter-btn');
