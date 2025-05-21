@@ -90,7 +90,7 @@
 
     /* Projects */
     h1.portfolio-title {text-align: center;font-size: 3rem;margin: 2rem 0;color: var(--light);}
-    .projects-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 2rem;max-width: 1200px;margin: 0 auto 4rem;padding: 0 1rem;}
+    .projects-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 300px));gap: 2rem;max-width: 1200px;margin: 0 auto 4rem;padding: 0 1rem;justify-content: center;}
     .project-card {background: var(--card-bg);border: 1px solid #333;border-radius: 12px;overflow: hidden;display: flex;flex-direction: column;position: relative;}
     .project-image {width: 100%; height: 180px;object-fit: cover;}
     .project-content {padding: 1rem;flex: 1;display: flex;flex-direction: column;}
@@ -218,7 +218,7 @@
           </div>
         </div>
       </div>
-      <img src="./data/profile_img.png" alt="[Your Name]" class="about-img">
+      <img src="./data/profile_img.png" alt="Francesco Caglianone" class="about-img">
     </div>
   </section>
 
@@ -247,68 +247,38 @@
         <button class="filter-btn" data-filter="Mobile App">Mobile App</button>
     </div>
     <div class="projects-grid">
-        <!-- Project 1 -->
         <div class="project-card">
           <img src="./data/projects_img/tik_tok_network_crawler.png" alt="TikTok Network Crawler" class="project-image"><a href="https://github.com/FrankCaglianone/TikTok-network-crawler.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>TikTok Network Crawler</h3><p>Explore the network dynamics of TikTok users engaged in various topics.</p><div class="project-tags"><span class="tag">Data Analysis</span></div></div>
         </div>
-        <!-- Project 2 -->
         <div class="project-card">
           <img src="./data/projects_img/anomaly_detection.png" alt="Data Stream Anomaly Detection" class="project-image"><a href="https://github.com/FrankCaglianone/Efficient-Data-Stream-Anomaly-Detection.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>Data Stream Anomaly Detection</h3><p>Detect anomalies in real-time data streams of floating-point numbers!</p><div class="project-tags"><span class="tag">Software</span><span class="tag">Published</span></div></div>
         </div>
-        <!-- Project 3 -->
         <div class="project-card">
           <img src="./data/projects_img/rowing.png" alt="Row Club Manager" class="project-image"><a href="https://github.com/FrankCaglianone/RowClubManager.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>Row Club Manager</h3><p>The perfect way to effortlessly manage your Rowing Club! Get the boats ready and let the adventures begin!</p><div class="project-tags"><span class="tag">Software</span></div></div>
         </div>
-        <!-- Project 4 -->
         <div class="project-card">
-        <img src="./data/projects_img/musicstore.png" alt="Music Store" class="project-image">
-        <a href="https://github.com/FrankCaglianone/MusicStore.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
-        <div class="project-content">
-            <h3>Music Store</h3>
-            <p>Your Ultimate Music Organizer – Effortlessly Catalog, Query, and Explore Your Music Collection!</p>
-            <div class="project-tags">
-            <span class="tag">Software</span>
-            </div>
+          <img src="./data/projects_img/musicstore.png" alt="Music Store" class="project-image"><a href="https://github.com/FrankCaglianone/MusicStore.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
+          <div class="project-content"> <h3>Music Store</h3> <p>Your Ultimate Music Organizer – Effortlessly Catalog, Query, and Explore Your Music Collection!</p> <div class="project-tags"> <span class="tag">Software</span> </div> </div>
         </div>
-        </div>
-        <!-- Project 5 -->
         <div class="project-card">
-        <img src="./data/projects_img/BudgetBuddy.png" alt="Budget Buddy" class="project-image">
-        <a href="https://github.com/FrankCaglianone/BudgetBuddy.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
-        <div class="project-content">
-            <h3>Budget Buddy</h3>
-            <p>Track your everyday expenses with Budget Buddy!</p>
-            <div class="project-tags">
-            <span class="tag">Mobile App</span>
-            </div>
+          <img src="./data/projects_img/BudgetBuddy.png" alt="Budget Buddy" class="project-image"> <a href="https://github.com/FrankCaglianone/BudgetBuddy.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
+          <div class="project-content"> <h3>Budget Buddy</h3> <p>Track your everyday expenses with Budget Buddy!</p> <div class="project-tags"> <span class="tag">Mobile App</span> </div></div>
         </div>
-        </div>
-        <!-- Project 6 -->
         <div class="project-card">
-        <img src="./data/projects_img/CopenhagenBuzz.png" alt="Copenhagen Buzz" class="project-image">
-        <a href="https://github.com/FrankCaglianone/CopenaghenBuzz.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
-        <div class="project-content">
-            <h3>Copenhagen Buzz</h3>
-            <p>Share and explore local events in Copenhagen.</p>
-            <div class="project-tags">
-            <span class="tag">Mobile App</span>
-            </div>
+          <img src="./data/projects_img/CopenhagenBuzz.png" alt="Copenhagen Buzz" class="project-image"><a href="https://github.com/FrankCaglianone/CopenaghenBuzz.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
+          <div class="project-content"><h3>Copenhagen Buzz</h3><p>Share and explore local events in Copenhagen.</p><div class="project-tags"><span class="tag">Mobile App</span></div></div>
         </div>
-        </div>
-        <!-- Project 7 -->
         <div class="project-card">
           <img src="./data/projects_img/FlutterTrivia.png" alt="Flutter Trivia" class="project-image"><a href="https://github.com/FrankCaglianone/FlutterTrivia.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>Flutter Trivia</h3><p>Test your Flutter knowledge!</p><div class="project-tags"><span class="tag">Mobile App</span></div></div>
         </div>
-        <!-- Project 8 -->
         <div class="project-card">
           <img src="./data/projects_img/Homer_Rush.png" alt="Homer Rush" class="project-image"><a href="https://github.com/FrankCaglianone/Homer-Rush.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>Homer Rush</h3><p>A Mario Bros inspired video game but using Homer Simpon in Springfield.</p><div class="project-tags"><span class="tag">Game Development</span></div></div>
         </div>
-        <!-- Project 9 -->
         <div class="project-card">
           <img src="./data/projects_img/2048.png" alt="2048" class="project-image"><a href="https://github.com/FrankCaglianone/2048-Game-in-java.git" class="project-link" target="_blank"><svg><use xlink:href="#icon-github"/></svg></a>
           <div class="project-content"><h3>2048</h3><p>A replica of the famous 2048 math game.</p><div class="project-tags"><span class="tag">Game Development</span></div></div>
